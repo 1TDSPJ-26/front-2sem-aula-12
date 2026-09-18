@@ -2,7 +2,7 @@ import { useState } from "react";
 
 export default function Conteudo() {
 
-  let nomeComum: string | null = "sophia";
+  let nomeComum: string | null = "flavio";
   function alterNomeComum() {
     nomeComum = prompt("digite o novo nome!");
     console.log("nome alterado : ", nomeComum)
