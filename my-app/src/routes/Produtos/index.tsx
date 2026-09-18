@@ -1,16 +1,19 @@
 import { useEffect, useState } from "react";
 import type { TipoProduto } from "../../types/types";
-import { listaProdutos } from "../../lsitaprodutos";
+import { listaProdutos } from "../../data/listaProdutos";
 import { Link } from "react-router";
-import { MdEdit as Editar} from "react-icons/md";
+import { CiEdit as Editar} from "react-icons/ci";
+
 
 
 export default function Produtos() {
+
   const [produtos, setProdutos] = useState<TipoProduto[]>([]);
 
   useEffect(() => {
     setProdutos(listaProdutos);
   }, []);
+
   return (
     <main>
       <h2>Produtos</h2>
@@ -18,24 +21,24 @@ export default function Produtos() {
         <thead>
           <tr>
             <th>ID</th>
-            <th>Nome</th>
+            <th>NOME</th>
             <th>PREÇO</th>
             <th>AÇÕES</th>
           </tr>
         </thead>
         <tbody>
-          {produtos.map( (p)=>(
-            <tr> 
+          {produtos.map((p) => (
+            <tr>
               <td>{p.id}</td>
               <td>{p.nome}</td>
               <td>{p.preco}</td>
-              <td><Link to={`/editar-produtos/${p.id}`}><Editar /></Link></td>
+              <td><Link to={`/editar-produtos/${p.id}`}><Editar/></Link></td>
             </tr>
-          ) )}
+          ))}
         </tbody>
         <tfoot>
           <tr>
-            <td colSpan={4}>Quantidade de produtos: {produtos.length}</td>
+            <td colSpan={4}>Quantidade de produtos : {produtos.length}</td>
           </tr>
         </tfoot>
       </table>
