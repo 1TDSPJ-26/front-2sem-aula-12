@@ -6,7 +6,6 @@ import App from './App.tsx'
 import EditarProduto from './routes/EditarProduto/index.tsx'
 import ProdutoDetalhe from './routes/ProdutoDetalhe/index.tsx'
 import Produtos from './routes/Produtos/index.tsx'
-import Lampada from './routes/Lampada/index.tsx'
 import Home from './routes/Home/index.tsx'
 import Error from './routes/Error/index.tsx'
 import UsuariosGit from './routes/UsuariosGit/index.tsx'
@@ -32,10 +31,6 @@ const router = createBrowserRouter([
       {
         path: '/editar-produto/:id',
         element: <EditarProduto />
-      },
-      {
-        path: '/lampada',
-        element: <Lampada />
       },
       {
         path: '/users/git',

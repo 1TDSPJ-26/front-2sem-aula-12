@@ -9,8 +9,6 @@ export default function EditarProduto() {
 
     const[produto, setProduto] = useState<TipoProduto>({} as TipoProduto);
 
-    const[clicando, setClicando] = useState<number>(0);
-
     useEffect(() => {
         const prodEncontrado = listaProdutos.find((i) => i.id === Number(id));
         setProduto(prodEncontrado!);
