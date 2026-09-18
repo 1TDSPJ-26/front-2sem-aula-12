@@ -1,4 +1,3 @@
-import { Link } from 'react-router'
 import { useEffect, useState } from "react"
 
     type TipoUsuarioGit = {
