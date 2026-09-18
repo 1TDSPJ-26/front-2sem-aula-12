@@ -18,7 +18,7 @@ export default function Home() {
   console.log(jogos[1]);
   console.log(jogos[0]);
   //Aplicando o destructuring, podemos utilizar os itens separadamente em variáveis criadas de qualquer nome, em qualquer ordem!!!
-  const [sonic,mario,zelda] = jogos;
+  const [, mario,zelda] = jogos;
 
 
   return (
