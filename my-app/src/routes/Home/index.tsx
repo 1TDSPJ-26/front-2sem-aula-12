@@ -18,19 +18,19 @@ export default function Home() {
   console.log(jogos[1]);
   console.log(jogos[0]);
   //Aplicando o destructuring, podemos utilizar os itens separadamente em variáveis criadas de qualquer nome, em qualquer ordem!!!
-  const [sonic, mario, zelda] = jogos;
+  const [, mario, zelda] = jogos;
 
 
   return (
     <main>
       <h2>Home</h2>
       <div>
-        <h3>Estojo</h3>
+        <h2>Estojo</h2>
         <p>{lapis}</p>
         <p>{caneta}</p>
       </div>
       <div>
-        <h3>Jogos</h3>
+        <h2>Jogos</h2>
         <p>{zelda}</p>
         <p>{mario}</p>
       </div>
