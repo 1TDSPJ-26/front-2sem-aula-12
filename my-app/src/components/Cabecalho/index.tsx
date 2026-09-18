@@ -1,7 +1,10 @@
+import Menu from '../Menu'
+
 export default function Cabecalho() {
   return (
     <header>
-      <h1>Meu App</h1>
+      <h1>Cabecalho</h1>
+      <Menu />
     </header>
-  );
+  )
 }
