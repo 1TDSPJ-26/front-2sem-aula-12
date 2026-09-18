@@ -1,16 +1,30 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import App from './App.tsx'
 import { createBrowserRouter, RouterProvider } from 'react-router'
-
 import App from './App'
-import home from './routes/home'
-import produtos from './routes/produtos'
-import editarProdutos from './routes/editarProdutos'
-import error from './routes/error'
+import Home from './routes/Home'
+import Produtos from './routes/Produtos'
+import EditarProdutos from './routes/EditarProdutos'
+import Error from './routes/Error'
+import UsuariosGit from './routes/UsuariosGit'
+
+const router = createBrowserRouter([
+  {
+    path: '/', element: <App />, errorElement: <Error />,
+    children: [
+      { path: '/', element: <Home/> },
+      { path: '/produtos', element: <Produtos/> },
+      { path: '/editar-produtos/:id', element: <EditarProdutos/> },
+      { path: '/users/git', element: <UsuariosGit/> }
+    ]
+  }
+])
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <App />
+    <RouterProvider router={router} />
   </StrictMode>,
 )
+
+
+
