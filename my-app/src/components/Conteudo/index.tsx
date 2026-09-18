@@ -11,7 +11,7 @@ export default function Conteudo() {
   const [nomeState, setNomeState] = useState<string | null>("juquinha");
   function alterNomeState() {
     const nome: string | null = prompt("digite o novo nome")
-    setNomeState( (valorAnterior)=> valorAnterior = nome);
+    setNomeState(nome);
     console.log("Nome alterado : ", nomeState);
   }
 
