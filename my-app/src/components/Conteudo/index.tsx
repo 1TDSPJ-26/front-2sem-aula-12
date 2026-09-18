@@ -14,7 +14,7 @@ export default function Conteudo() {
     setNomeState( (valorAnterior)=> valorAnterior = nome);
     console.log("Nome alterado : ", nomeState);
   }
-
+  
 
   return (
     <main>
