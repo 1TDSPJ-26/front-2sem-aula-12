@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 
 import { useParams } from "react-router-dom";
 
-import type { TipoProduto } from "../../types/types";
+//import type { TipoProduto } from "../../types/types";
 
 //Criando uma interface para o tipo de dados que o componente vai receber
 
@@ -32,7 +32,8 @@ import type { TipoProduto } from "../../types/types";
 
 //Criando um array de produtos
 
-const listaProdutos: TipoProduto[] = [
+//const listaProdutos: TipoProduto[] = 
+[
 
     { id: 1, nome: "Produto 1", preco: 10.0 },
 
@@ -48,7 +49,7 @@ export default function EditarProdutos() {
 
     //const[produto, setProduto] = useState<{ id: number; nome: string; preco: number }>();
 
-    const [produto, setProduto] = useState<TipoProduto>({} as TipoProduto);
+    //const [produto, setProduto] = useState<TipoProduto>({} as TipoProduto);
 
     const [clicando, setClicando] = useState<number>(0);
 

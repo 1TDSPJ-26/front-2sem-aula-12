@@ -7,6 +7,8 @@ import Produtos from './routes/Produtos'
 import EditarProdutos from './routes/EditarProdutos'
 import Error from './routes/Error'
 import { createBrowserRouter, RouterProvider } from 'react-router'
+import UsuariosGit from "./routes/UsuariosGIT"
+
 
 const router = createBrowserRouter([
   {
@@ -16,7 +18,8 @@ const router = createBrowserRouter([
     children: [
       { path: '/', element: <Home /> },
       { path: '/produtos', element: <Produtos /> },
-      { path: '/editar-produtos', element: <EditarProdutos /> }
+      { path: '/editar-produtos', element: <EditarProdutos /> },
+      { path: '/users/git', element: <UsuariosGit /> },
     ]
   }
 ]);
