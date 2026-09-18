@@ -53,7 +53,7 @@ export default function UsuariosGit() {
         <main>
             <h2>Lista de usuarios Git</h2>
                 <ul>
-                    {usuarios.map( (u,i)=>(
+                    {usuarios.map( (u)=>(
                     <li key={u.id}>{u.id} - {u.login} - <img src={u.avatar_url} alt={u.login} width={40}/></li>))}
                 </ul>
         </main>

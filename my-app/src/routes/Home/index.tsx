@@ -17,7 +17,7 @@ const estojo = {
   console.log(jogos[1]);
   console.log(jogos[0]);
   
-  const [sonic,mario,zelda] = jogos;
+  const [mario,zelda] = jogos;
 
 
 
