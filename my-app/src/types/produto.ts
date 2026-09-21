@@ -3,4 +3,6 @@ export type TipoProduto = {
     nome: string;
     preco: number,
     estoque: number
-}
+};
+
+export type DadosProduto = Omit<TipoProduto, "id">;
